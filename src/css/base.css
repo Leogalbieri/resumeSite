@@ -1,0 +1,45 @@
+body {
+  background-color: var(--bg-dark);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+.section {
+  padding: 80px 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.about {
+    text-align: justify;
+}
+
+.muted {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-align: justify;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.skip-link:focus { left: 12px; z-index: 2000; }
+
+.is-hidden {
+    display: none !important;
+}

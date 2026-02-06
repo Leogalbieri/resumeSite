@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Leonardo C Galbieri</title>
+
+  <!-- Link Favicon -->
+  <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+
+  <meta name="description" content="Portfólio profissional com experiência, formação, habilidades e contato." />
+
+  <!-- Fonts / Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- CSS (em ordem: reset -> variáveis -> base -> componentes -> seções) -->
+  <link rel="stylesheet" href="src/css/reset.css" />
+  <link rel="stylesheet" href="src/css/variables.css" />
+  <link rel="stylesheet" href="src/css/base.css" />
+  <link rel="stylesheet" href="src/css/components.css" />
+  <link rel="stylesheet" href="src/css/sections.css" />
+
+  <!-- JS -->
+  <script defer src="src/js/main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#about">Pular para o conteúdo</a>
+
+  <!--
+    LINKS DE NAVEGAÇÃO
+  -->
+
+  <nav class="nav" aria-label="Navegação principal">
+      <div class="nav-container">
+        <a href="#" class="logo">Leonardo Corredori Galbieri</a>
+
+        <!-- NAV BAR -->
+        <div class="nav-right">
+          <div class="nav-links" data-nav>
+            <a href="#about" data-pt="Sobre" data-en="About">Sobre</a>
+            <a href="#education" data-pt="Formação" data-en="Education">Formação</a>
+            <a href="#skills" data-pt="Habilidades" data-en="Skills">Habilidades</a>
+            <a href="#certs" data-pt="Certificações" data-en="Certifications">Certificações</a>
+            <a href="#experience" data-pt="Experiência" data-en="Work Experience">Experiência</a>
+            <a href="#contact" data-pt="Contato" data-en="Contact">Contato</a>
+          </div>
+          
+          <!--
+            BOTÃO IDIOMA
+          -->
+
+          <button class="lang-toggle" id="langToggle" type="button" aria-label="Trocar idioma">
+            EN
+          </button>
+          
+        </div>
+      </div>
+    </nav>
+
+  <header class="hero">
+
+    <!--
+      FOTO
+    -->
+
+    <div class="profile-img-container" aria-hidden="true">
+      <img src="assets/img/profile.jpg" alt="Foto de perfil" />
+    </div>
+
+    <!--
+      NOME
+    -->
+
+    <h1>Leonardo Corredori Galbieri</h1>
+    <p class="subtitle" data-pt="Estudante de Engenharia de Software" data-en="Software Engineering Student">Estudante de Engenharia de Software</p>
+
+    <!--
+      CONTATOS 1
+    -->
+
+    <div class="social-icons-hero" aria-label="Redes sociais">
+
+      <!-- LinkedIn -->
+      <a
+        href="https://www.linkedin.com/in/leonardo-corredori-galbieri-746750325/?locale=pt-BR"
+        data-href-pt="https://www.linkedin.com/in/leonardo-corredori-galbieri-746750325/?locale=pt-BR"
+        data-href-en="https://www.linkedin.com/in/leonardo-corredori-galbieri-746750325/?locale=en-US"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+      <!-- GitHub -->
+      <a
+        href="https://github.com/Leogalbieri"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+      >
+        <i class="fab fa-github"></i>
+      </a>
+
+      <!-- WhatsApp -->
+      <a
+        href="https://wa.me/5511976028420"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <!-- Email -->
+      <a
+        href="mailto:leogalbieri@outlook.com"
+        aria-label="Email"
+      >
+        <i class="far fa-envelope"></i>
+      </a>
+    </div>
+
+    <!--
+      BAIXAR CURRÍCULO
+    -->
+
+    <div class="cv-actions">
+      <a 
+        class="btn-cv" 
+        href="assets/cv/Leonardo_Galbieri_Currículo.pdf"
+        data-href-pt="assets/cv/Leonardo_Galbieri_Currículo.pdf"
+        data-href-en="assets/cv/Leonardo_Galbieri_Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-solid fa-download"></i>
+        <span
+          data-pt="Baixar Currículo"
+          data-en="Download Resume"
+        >
+          Baixar Currículo
+        </span>
+      </a>
+    </div>
+
+  </header>
+
+  <!--
+    SOBRE
+  -->
+
+  <main>
+    <section id="about" class="section">
+      <h2 data-pt="Sobre" data-en="About">Sobre</h2>
+      <div class="glass-card box-hover">
+        <p 
+          class="about"
+          data-pt="Sou estudante de Engenharia de Software, com grande interesse e dedicação nas áreas de Inteligência Artificial, 
+          Ciência de Dados e Desenvolvimento. Busco constantemente expandir e aprofundar meus conhecimentos, unindo teoria e prática 
+          para desenvolver soluções inovadoras."
+          data-en="I am a Software Engineering student with strong interest and dedication in the areas of Artificial Intelligence, 
+          Data Science, and Software Development. I am constantly seeking to expand and deepen my knowledge, combining theory and 
+          practice to develop innovative solutions."
+        >
+          Sou estudante de Engenharia de Software, com grande interesse e dedicação nas áreas de Inteligência Artificial, 
+          Ciência de Dados e Desenvolvimento. Busco constantemente expandir e aprofundar meus conhecimentos, unindo teoria e prática 
+          para desenvolver soluções inovadoras.
+        </p>
+      </div>
+    </section>
+
+    <!--
+      FORMAÇÕES
+    -->
+
+    <section id="education" class="section">
+      <h2 data-pt="Formação" data-en="Education">Formação</h2>
+
+      <div class="glass-card box-hover">
+
+        <div class="item-box">
+          <span class="date">2025 - 2029</span>
+          <p>
+            <strong
+              data-pt="Bacharel em Engenharia de Software"
+              data-en="Bachelor's Degree in Software Engineering"
+            >
+              Bacharel em Engenharia de Software
+            </strong>
+            <br />
+            <span
+              data-pt="Centro Universitário Padre Anchieta - UniAnchieta"
+              data-en="Padre Anchieta University Center - UniAnchieta"
+            >
+              Centro Universitário Padre Anchieta - UniAnchieta
+            </span>
+          </p>
+        </div>
+
+        <div class="item-box">
+          <span class="date">2023 - 2024</span>
+          <p>
+            <strong
+              data-pt="Técnico em Eletroeletrônica"
+              data-en="Electro-electronics Technician"
+            >
+              Técnico em Eletroeletrônica
+            </strong>
+            <br />
+            <span
+              data-pt="Serviço Nacional de Aprendizagem Industrial de São Paulo - SENAI SP"
+              data-en="National Service for Industrial Training of São Paulo - SENAI SP"
+            >
+              Serviço Nacional de Aprendizagem Industrial de São Paulo - SENAI SP
+            </span>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!--
+      HABILIDADES
+    -->
+
+    <section id="skills" class="section">
+      <h2 data-pt="Habilidades" data-en="Skills">Habilidades</h2>
+      <div class="tag-container">
+        <span class="tag" data-pt="Python" data-en="Python">Python</span>
+        <span class="tag" data-pt="Java" data-en="Java">Java</span>
+        <span class="tag" data-pt="C" data-en="C">C</span>
+        <span class="tag" data-pt="Programação Orientada a Objetos" data-en="Object-Oriented Programming"
+        >Programação Orientada a Objetos</span>
+        <span class="tag" data-pt="Windows" data-en="Windows">Windows</span>
+        <span class="tag" data-pt="Linux" data-en="Linux">Linux</span>
+        <span class="tag" data-pt="Inteligência Artificial" data-en="Artificial Intelligence">Inteligência Artificial</span>
+        <span class="tag" data-pt="Machine Learning" data-en="Machine Learning">Machine Learning</span>
+        <span class="tag" data-pt="Deep Learning" data-en="Deep Learning">Deep Learning</span>
+        <span class="tag" data-pt="SQL Server" data-en="SQL Server">SQL Server</span>
+        <span class="tag" data-pt="Internet das Coisas" data-en="Internet of Things">Internet das Coisas</span>
+        <span class="tag" data-pt="Power BI" data-en="Power BI">Power BI</span>
+        <span class="tag" data-pt="Excel" data-en="Excel">Excel</span>
+        <span class="tag" data-pt="Power Point" data-en="Power Point">Power Point</span>
+        <span class="tag" data-pt="Inglês Intermediário" data-en="Intermediate English">Inglês Intermediário</span>
+    
+      </div>
+    </section>
+
+    <!--
+      CERTIFICAÇÕES
+    -->
+
+    <section id="certs" class="section">
+      <h2 data-pt="Certificações" data-en="Certifications">Certificações</h2>
+
+      <div class="certs-list">
+        <div class="glass-card box-hover cert-item">
+          <h3 data-pt="Microsoft Azure AI Fundamentals (AI-900)" data-en="Microsoft Azure AI Fundamentals (AI-900)">
+            Microsoft Azure AI Fundamentals (AI-900)</h3>
+          <div class="cert-meta">
+            <span class="cert-org" data-pt="Microsoft Corporation, Inc." data-en="Microsoft Corporation, Inc.">
+              Microsoft Corporation, Inc.</span>
+            <span class="cert-year">2023</span>
+          </div>
+        </div>
+
+        <div class="glass-card box-hover cert-item">
+          <h3 data-pt="Microsoft Azure Data Fundamentals (DP-900)" data-en="Microsoft Azure Data Fundamentals (DP-900)">
+            Microsoft Azure Data Fundamentals (DP-900)</h3>
+          <div class="cert-meta">
+            <span class="cert-org" data-pt="Microsoft Corporation, Inc." data-en="Microsoft Corporation, Inc.">
+              Microsoft Corporation, Inc.</span>
+            <span class="cert-year">2023</span>
+          </div>
+        </div>
+
+        <div class="glass-card box-hover cert-item">
+          <h3 data-pt="Internet das Coisas" data-en="Internet of Things">Internet of Things</h3>
+          <div class="cert-meta">
+            <span class="cert-org" data-pt="WEG S.A." data-en="WEG S.A.">WEG S.A.</span>
+            <span class="cert-year">2023</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      EXPERIÊNCIA
+    -->
+
+    <section id="experience" class="section">
+      <h2 data-pt="Experiência Profissional" data-en="Work Experience">
+        Experiência Profissional
+      </h2>
+
+      <div class="glass-card box-hover">
+        <div class="item-box">
+          <span class="date">03/2025 - 11/2025</span>
+
+          <p>
+            <strong
+              data-pt="Auxiliar de Elétrica"
+              data-en="Electrical Assistant"
+            >
+              Auxiliar de Elétrica
+            </strong>
+            –
+            <span
+              data-pt="In-Haus Industrial, Grupo GPS"
+              data-en="In-Haus Industrial, GPS Group"
+            >
+              In-Haus Industrial, Grupo GPS
+            </span>
+          </p>
+
+          <p
+            class="muted"
+            data-pt="Atuei como parte fundamental da equipe de manutenção elétrica predial no Centro de Distribuição CD-300 do Magazine Luiza, garantindo a confiabilidade e a operação contínua das instalações. Minhas atividades envolveram desde instalações e reparos em sistemas de baixa tensão até a montagem de circuitos de comando e potência para pequenas máquinas."
+            data-en="I worked as a key member of the building electrical maintenance team at Magazine Luiza's CD-300 Distribution Center, ensuring the reliability and continuous operation of the facilities. My responsibilities ranged from installations and repairs in low-voltage systems to the assembly of control and power circuits for small machines."
+          >
+            Atuei como parte fundamental da equipe de manutenção elétrica predial no Centro de Distribuição CD-300 do Magazine Luiza, 
+            garantindo a confiabilidade e a operação contínua das instalações. Minhas atividades envolveram desde instalações e reparos 
+            em sistemas de baixa tensão até a montagem de circuitos de comando e potência para pequenas máquinas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      CONTATOS 2
+    -->
+
+    <section id="contact" class="contact-section">
+      <div class="contact-wrap">
+        <h2 data-pt="Contatos" data-en="Contacts">Contatos</h2>
+
+        <div class="contact-grid">
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/leonardo-corredori-galbieri-746750325/?locale=pt-BR"
+            data-href-pt="https://www.linkedin.com/in/leonardo-corredori-galbieri-746750325/?locale=pt-BR"
+            data-href-en="https://www.linkedin.com/in/leonardo-corredori-galbieri-746750325/?locale=en-US"
+            class="contact-card"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir LinkedIn em nova aba"
+          >
+            <i class="fab fa-linkedin-in"></i>
+            <h4>LinkedIn</h4>
+            <p data-pt="Conecte-se comigo" data-en="Let's connect">Conecte-se comigo</p>
+          </a>
+
+          <!-- GitHub -->
+          <a
+            href="https://github.com/Leogalbieri"
+            class="contact-card"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir GitHub em nova aba"
+          >
+            <i class="fab fa-github"></i>
+            <h4>GitHub</h4>
+            <p data-pt="Meus projetos" data-en="My projects">Meus projetos</p>
+          </a>
+
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/5511976028420"
+            class="contact-card"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir conversa no WhatsApp em nova aba"
+          >
+            <i class="fab fa-whatsapp"></i>
+            <h4>WhatsApp</h4>
+            <p data-pt="Fale comigo" data-en="Message me">Fale comigo</p>
+          </a>
+
+          <!-- Email -->
+          <a
+            href="mailto:leogalbieri@outlook.com"
+            class="contact-card"
+            aria-label="Enviar email"
+          >
+            <i class="far fa-envelope"></i>
+            <h4>Email</h4>
+            <p data-pt="leogalbieri@outlook.com" data-en="leogalbieri@outlook.com">leogalbieri@outlook.com</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--
+    FOOTER
+  -->
+
+  <footer class="footer">
+    © 2026 Leonardo Corredori Galbieri
+  </footer>
+</body>
+</html>

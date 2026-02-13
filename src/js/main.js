@@ -12,15 +12,15 @@
       el.textContent = el.dataset[lang];
     });
 
-    // Atualiza links conforme idioma
+    // Atualiza links conforme idioma (linkedin e currículo)
     document.querySelectorAll("[data-href-pt][data-href-en]").forEach((link) => {
       link.href = lang === "pt" ? link.dataset.hrefPt : link.dataset.hrefEn;
     });
 
-    // Atualiza o idioma do documento (SEO/acessibilidade)
+    // Atualiza o idioma do documento
     document.documentElement.lang = lang === "pt" ? "pt-br" : "en";
 
-    // Botão mostra o PRÓXIMO idioma
+    // Texto do botão alterna idiomas
     btn.textContent = lang === "pt" ? "EN" : "PT";
 
     localStorage.setItem(STORAGE_KEY, lang);
@@ -38,10 +38,12 @@
   });
 })();
 
-// Remove o #hash do URL após clicar nos links do menu
+
+
+// REFRESH CERTO
+
 document.querySelectorAll('a[href^="#"]').forEach((a) => {
   a.addEventListener("click", () => {
-    // deixa o scroll acontecer primeiro
     setTimeout(() => {
       history.replaceState(null, "", window.location.pathname + window.location.search);
     }, 0);

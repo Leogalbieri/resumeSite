@@ -1,3 +1,6 @@
+/* BOTÕES DE CONTATO 02 */
+
+/* Container principal */
 .contact-section {
   background: #000;
   max-width: 100%;
@@ -5,17 +8,20 @@
   padding: 80px 2rem;
 }
 
+/* Container interno */
 .contact-wrap {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
 
+/* Subtítulo */
 .contact-subtitle {
   color: var(--text-muted);
   margin-bottom: 3rem;
 }
 
+/* Ativa o grid do CSS (deixa lado a lado) */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -23,6 +29,7 @@
   margin-top: 2rem;
 }
 
+/* Estiliza o card */
 .contact-card {
   background: var(--card-bg);
   padding: 2rem 1rem;
@@ -34,20 +41,29 @@
   transition: 0.3s;
 }
 
+/* Hover do card */
 .contact-card:hover {
   border-color: var(--primary);
   background: #161620;
   transform: translateY(-5px);
 }
 
+/* Ícone do card */
 .contact-card i {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   color: var(--primary);
 }
 
+/* Título do card */
 .contact-card h4 { margin-bottom: 0.5rem; font-size: 1rem; }
+
+/* Texto do card */
 .contact-card p { font-size: 0.8rem; color: var(--text-muted); }
+
+
+
+/* FOOTER */
 
 .footer {
   text-align: center;

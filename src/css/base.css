@@ -1,3 +1,6 @@
+/* PADRONIZAÇÃO GERAL DO SITE */
+
+/* Define o estilo base do site */
 body {
   background-color: var(--bg-dark);
   color: var(--text);
@@ -5,12 +8,14 @@ body {
   line-height: 1.6;
 }
 
+/* Organiza blocos da página */
 .section {
   padding: 80px 2rem;
   max-width: 900px;
   margin: 0 auto;
 }
 
+/* Padroniza títulos secundários */
 h2 {
   font-size: 2rem;
   margin-bottom: 2.5rem;
@@ -18,16 +23,19 @@ h2 {
   font-weight: 700;
 }
 
+/* Justifica texto */
 .about {
     text-align: justify;
 }
 
+/* Classe utilitária para textos secundários */
 .muted {
   font-size: 0.9rem;
   color: var(--text-muted);
   text-align: justify;
 }
 
+/* O TAB faz o teclado passar pela tela */
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -40,6 +48,7 @@ h2 {
 
 .skip-link:focus { left: 12px; z-index: 2000; }
 
+/* Esconde elementos desnecessários */
 .is-hidden {
     display: none !important;
 }

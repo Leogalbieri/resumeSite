@@ -1,6 +1,5 @@
-/* =========================================================
-   NAV
-========================================================= */
+/* BARRA DE NAVEGAÇÃO */
+
 .nav {
   position: fixed;
   top: 0;
@@ -11,7 +10,6 @@
   border-bottom: 1px solid var(--border-color);
 }
 
-/* Container: mantém o NOME no lugar (limitado a 1200px) */
 .nav-container {
   max-width: 1800px;
   margin: 0 auto;
@@ -30,11 +28,6 @@
   text-decoration: none;
 }
 
-
-/* Grupo da direita: LINKS + IDIOMA
-   - empurra para a direita (margin-left: auto)
-   - "escapa" do padding do container para encostar na borda da tela (right: -2rem)
-*/
 .nav-right {
   margin-left: auto;
 
@@ -43,10 +36,13 @@
   gap: 1.5rem;
 
   position: relative;
-  right: -2rem; /* mesmo valor do padding horizontal do .nav-container */
+  right: -2rem; 
 }
 
-/* Links */
+
+
+/* LINKS DE NAVEGAÇÃO */
+
 .nav-links {
   display: flex;
   gap: 1.5rem;
@@ -66,9 +62,10 @@
   color: var(--primary);
 }
 
-/* =========================================================
-   BOTÃO IDIOMA
-========================================================= */
+
+
+/* BOTÃO DE TROCA DE IDIOMA */
+
 .lang-toggle {
   min-width: 44px;
   height: 38px;
@@ -101,67 +98,10 @@
   background: rgba(99, 102, 241, 0.25);
 }
 
-/* =========================================================
-   RESPONSIVO (preserva o comportamento do menu mobile)
-========================================================= */
-@media (max-width: 768px) {
-  /* some com o sanduíche */
-  .nav-toggle {
-    display: none !important;
-  }
-
-  /* some com os links no mobile */
-  .nav-links {
-    display: none !important;
-  }
-
-  /* header compacto: logo à esquerda e idioma à direita */
-  .nav-container {
-    width: 90%;
-    max-width: 90%;
-    padding: 0.9rem 1rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-
-    box-sizing: border-box;
-  }
-
-  /* logo com ellipsis pra não empurrar o botão */
-  .logo {
-    flex: 1 1 auto;
-    min-width: 0;
-
-    font-size: 1.05rem;
-    line-height: 1.2;
-
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  /* botão de idioma alinhado e com folga da borda */
-  .lang-toggle {
-    flex: 0 0 auto;
-    min-width: 44px;
-    height: 36px;
-    margin-left: 12px;
-    margin-right: 2px;
-  }
-
-  .hero {
-    padding-top: 120px;
-    height: auto;
-    min-height: 100vh;
-  }
-}
 
 
-/* =========================================================
-   HERO (TOPO / APRESENTAÇÃO)
-========================================================= */
+/* HERO (HEADER E CONTATO 01) */
+
 .hero {
   height: 90vh;
 
@@ -199,7 +139,7 @@
   border: 4px solid var(--bg-dark);
 }
 
-/* Nome / Título */
+/* Nome e Título */
 .hero h1 {
   font-size: 3.5rem;
   font-weight: 800;
@@ -216,7 +156,7 @@
   text-transform: uppercase;
 }
 
-/* Ícones sociais (hero) */
+/* Ícones contato 01 */
 .social-icons-hero {
   display: flex;
   justify-content: center;
@@ -225,7 +165,7 @@
   gap: 24px;
   font-size: 1.4rem;
 
-  margin-bottom: 20px; /* antes estava sem unidade (20) */
+  margin-bottom: 20px;
 }
 
 .social-icons-hero a {
@@ -238,9 +178,10 @@
   transform: translateY(-3px);
 }
 
-/* =========================================================
-   AÇÕES (BOTÕES DO CURRÍCULO)
-========================================================= */
+
+
+/* BOTÃO CURRÍCULO */
+
 .cv-actions {
   margin-top: 24px;
   display: flex;
@@ -249,7 +190,7 @@
   gap: 24px;
 }
 
-/* Botão principal (mesmo estilo usado para ambos) */
+/* Botão */
 .btn-cv {
   width: 180px;
   padding: 12px 0;
@@ -278,9 +219,10 @@
   background: rgba(99, 102, 241, 0.28);
 }
 
-/* =========================================================
-   CARDS / TIMELINE
-========================================================= */
+
+
+/* CARDS (SOBRE, FORMAÇÕES, CERTIFICAÇÕES E EXPERIÊNCIA) */
+
 .glass-card {
   background: var(--card-bg);
   padding: 2.5rem;
@@ -301,9 +243,10 @@
   font-weight: 600;
 }
 
-/* =========================================================
-   TAGS (HABILIDADES / CERTIFICAÇÕES EM FORMATO DE CHIP)
-========================================================= */
+
+
+/* TAGS (HABILIDADES EM "BALÕES") */
+
 .tag-container {
   display: flex;
   justify-content: center;
@@ -326,9 +269,9 @@
   transform: translateY(-5px);
 }
 
-/*
-  CERTIFICAÇÕES
-*/
+
+
+/* CERTIFICAÇÕES */
 
 .certs-list {
   display: flex;
@@ -342,7 +285,6 @@
   text-align: left;
 }
 
-/* Título */
 .cert-item h3 {
   font-size: 1.05rem;
   font-weight: 700;
@@ -350,7 +292,6 @@
   line-height: 1.35;
 }
 
-/* Linha "Instituição  |  Ano" */
 .cert-meta {
   display: flex;
   justify-content: space-between;
@@ -363,7 +304,6 @@
   font-size: 0.9rem;
 }
 
-/* Ano com destaque */
 .cert-year {
   color: var(--primary);
   font-weight: 600;
@@ -371,10 +311,11 @@
   white-space: nowrap;
 }
 
-/* =========================================================
-   UTILITÁRIOS
-========================================================= */
-/* Hover padrão para boxes (reutilizável) */
+
+
+/* UTILITÁRIOS */
+
+/* Hover reutilizável */
 .box-hover {
   transition: 0.3s;
 }
@@ -385,32 +326,55 @@
   transform: translateY(-5px);
 }
 
-/* =========================================================
-   RESPONSIVO (MOBILE)
-========================================================= */
+
+
+/* MOBILE RESPONSIVO */
+
 @media (max-width: 768px) {
   .nav-toggle {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    display: none !important;
   }
 
   .nav-links {
-    display: none;
-  }
-
-  .nav-links.is-open {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-top: 10px;
+    display: none !important;
   }
 
   .nav-container {
-    flex-wrap: wrap;
+    width: 90%;
+    max-width: 90%;
+    padding: 0.9rem 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    box-sizing: border-box;
   }
 
-  .hero h1 {
-    font-size: 2.5rem;
+  .logo {
+    flex: 1 1 auto;
+    min-width: 0;
+
+    font-size: 1.05rem;
+    line-height: 1.2;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .lang-toggle {
+    flex: 0 0 auto;
+    min-width: 44px;
+    height: 36px;
+    margin-left: 12px;
+    margin-right: 2px;
+  }
+
+  .hero {
+    padding-top: 120px;
+    height: auto;
+    min-height: 100vh;
   }
 }

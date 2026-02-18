@@ -42,10 +42,12 @@
 }
 
 /* Hover do card */
-.contact-card:hover {
-  border-color: var(--primary);
-  background: #161620;
-  transform: translateY(-5px);
+@media (hover:hover) and (pointer: fine) {
+  .contact-card:hover {
+    border-color: var(--primary);
+    background: #161620;
+    transform: translateY(-5px);
+  }
 }
 
 /* Ícone do card */

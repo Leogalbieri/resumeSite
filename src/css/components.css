@@ -58,8 +58,10 @@
   letter-spacing: 1px;
 }
 
-.nav-links a:hover {
-  color: var(--primary);
+@media (hover:hover) and (pointer: fine) {
+  .nav-links a:hover {
+    color: var(--primary);
+  }
 }
 
 
@@ -87,10 +89,12 @@
   transition: 0.25s;
 }
 
-.lang-toggle:hover {
-  border-color: var(--primary);
-  background: rgba(99, 102, 241, 0.18);
-  transform: translateY(-2px);
+@media (hover:hover) and (pointer: fine) {
+  .lang-toggle:hover {
+    border-color: var(--primary);
+    background: rgba(99, 102, 241, 0.18);
+    transform: translateY(-2px);
+  } 
 }
 
 .lang-toggle:active {
@@ -129,6 +133,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: 0.3s;
 }
 
 .profile-img-container img {
@@ -137,6 +143,14 @@
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid var(--bg-dark);
+}
+
+@media (hover:hover) and (pointer: fine) {
+  .profile-img-container:hover {
+    border-color: var(--primary);
+    background: rgba(99, 102, 241, 0.18);
+    transform: translateY(-8px);
+  }
 }
 
 /* Nome e Título */
@@ -173,9 +187,11 @@
   transition: 0.3s;
 }
 
-.social-icons-hero a:hover {
-  color: var(--primary);
-  transform: translateY(-3px);
+@media (hover:hover) and (pointer: fine) {
+  .social-icons-hero a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+  }
 }
 
 
@@ -213,10 +229,12 @@
   box-shadow: none;
 }
 
-.btn-cv:hover {
-  transform: translateY(-2px);
-  border-color: var(--primary);
-  background: rgba(99, 102, 241, 0.28);
+@media (hover:hover) and (pointer: fine) {
+  .btn-cv:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary);
+    background: rgba(99, 102, 241, 0.28);
+  }
 }
 
 
@@ -263,10 +281,12 @@
   transition: 0.3s;
 }
 
-.tag:hover {
-  border-color: var(--primary);
-  background: rgba(99, 102, 241, 0.18);
-  transform: translateY(-5px);
+@media (hover:hover) and (pointer: fine) {
+  .tag:hover {
+    border-color: var(--primary);
+    background: rgba(99, 102, 241, 0.18);
+    transform: translateY(-5px);
+  }
 }
 
 
@@ -316,14 +336,17 @@
 /* UTILITÁRIOS */
 
 /* Hover reutilizável */
+
 .box-hover {
   transition: 0.3s;
 }
 
-.box-hover:hover {
-  border-color: var(--primary);
-  background: #161620;
-  transform: translateY(-5px);
+@media (hover:hover) and (pointer: fine) {
+  .box-hover:hover {
+    border-color: var(--primary);
+    background: #161620;
+    transform: translateY(-5px);
+  }
 }
 
 

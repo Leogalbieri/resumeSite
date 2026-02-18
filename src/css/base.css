@@ -35,19 +35,6 @@ h2 {
   text-align: justify;
 }
 
-/* O TAB faz o teclado passar pela tela */
-.skip-link {
-  position: absolute;
-  left: -9999px;
-  top: 12px;
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  padding: 10px 12px;
-  border-radius: 10px;
-}
-
-.skip-link:focus { left: 12px; z-index: 2000; }
-
 /* Esconde elementos desnecessários */
 .is-hidden {
     display: none !important;

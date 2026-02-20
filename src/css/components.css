@@ -71,6 +71,7 @@
 .lang-toggle {
   min-width: 44px;
   height: 38px;
+  margin-right: 10px;
 
   display: inline-flex;
   align-items: center;
